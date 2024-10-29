@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  background-color: #029DAF;
+  color: white;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2em; /* Ajuste o tamanho do texto conforme necessário */
+    color: #ffffff; /* Cor principal do texto */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7), 0 0 25px #029DAF, 0 0 5px #00adc0;
+}
+
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1; /* Isso faz o main ocupar o espaço restante */
+}
+
+.hero {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2em; /* Ajuste o tamanho do texto conforme necessário */
+  color: #ffffff; /* Cor principal do texto */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7), 0 0 25px #029DAF, 0 0 5px #00adc0;
+}
+
+.hero p {
+  margin: 10px 0;
+  font-size: 1.3em; /* Ajuste o tamanho do texto conforme necessário */
+  color: #ffffff; /* Cor principal do texto */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7), 0 0 25px #029DAF, 0 0 5px #00adc0;
+}
+
+.btn {
+  background-color: #029DAF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+ 
+}
+.carrossel {
+  position: relative;
+  max-width: 600px; /* Largura máxima do carrossel */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 300px; /* Altura menor para as imagens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Para ocultar partes da imagem que excedem o contêiner */
+}
+
+img {
+  width: auto; /* Largura automática para manter a proporção */
+  height: 100%; /* Altura total do slide */
+  object-fit: contain; /* Mantém a proporção e ajusta a imagem dentro do contêiner */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.destaques {
+  padding: 20px;
+  text-align: center;
+}
+
+.destaques h2 {
+  margin-bottom: 20px;
+  font-size: 2em; /* Ajuste o tamanho do texto conforme necessário */
+  color: #ffffff; /* Cor principal do texto */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7), 0 0 25px #029DAF, 0 0 5px #00adc0;
+}
+
+.produtos-destaque {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #029DAF;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
