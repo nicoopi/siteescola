@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Eletrônicos</title>
+    <title>Produtos - NicPlace</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Nossos Produtos</h1>
+        <h1 >Nossos Produtos</h1>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -19,15 +19,50 @@
         </nav>
     </header>
     <main>
-        <h2>Lista de Produtos</h2>
-
+        <h2 class="title">Lista de Produtos</h2>
+        <div class="container">
+            <h1 class="title">Produtos em Destaque</h1>
+            <div class="product-container">
+                <div class="product" onclick="toggleDescription(this)">
+                    <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v859569415750808256/products/100051710.00-iphone-16-128gb-preto-mye73be-a.jpg&height=470&width=470&height=470&width=470&quality=0.8" alt="Produto 1">
+                    <h2>Apple iPhone 16 128GB Preto</h2>
+                    <p class="price">R$ 7.019,10</p>
+                    <p class="description">O Apple iPhone 16 128GB na cor preta apresenta um design elegante e uma tela Super Retina XDR de 6,1 polegadas. Equipado com o chip A17 Bionic, oferece desempenho excepcional e câmeras de alta qualidade. Com autonomia duradoura e suporte para carregamento rápido, também possui recursos de segurança como Face ID. Com 128GB de armazenamento, é ideal para quem busca um smartphone potente e estiloso.</p>
+                </div>
+                <div class="product" onclick="toggleDescription(this)">
+                    <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v7922407148832781834/products/227972.00.638482543104780455-apple-iphone-15-128gb-rosa-mtp13br-a.jpg&height=470&width=470&height=470&width=470&quality=0.8" alt="Produto 2">
+                    <h2>Apple iPhone 15 128GB Rosa </h2>
+                    <p class="price">R$ 4.799,00</p>
+                    <p class="description">Um smartphone elegante com design em alumínio e uma tela Super Retina XDR de 6,1 polegadas. Possui um sistema de câmeras avançado, chip A16 Bionic para alto desempenho e 128GB de armazenamento, ideal para fotos e aplicativos.</p>
+                </div>
+                <div class="product" onclick="toggleDescription(this)">
+                    <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v4786049551400202705/products/100051741.00-iphone-16-pro-128gb-titanio-branco-myne3be-a.jpg&height=470&width=470&height=470&width=470&quality=0.8" alt="Produto 3">
+                    <h2>Apple iPhone 16 Pro 128GB Titânio Branco </h2>
+                    <p class="price">R$ 9.449,10</p>
+                    <p class="description">Com uma construção em titânio e uma tela Super Retina XDR de 6,1 polegadas, este modelo oferece câmeras poderosas e o chip A17 Pro, que proporciona desempenho impressionante. Ideal para multitarefa e fotografia profissional.</p>
+                </div>
+                <div class="product" onclick="toggleDescription(this)">
+                    <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v7420763837149211866/products/100051740.00-iphone-16-pro-128gb-titanio-preto-mynd3be-a.jpg&height=470&width=470&height=470&width=470&quality=0.8" alt="Produto 4">
+                    <h2>Apple iPhone 16 Pro 128GB Titânio Preto</h2>
+                    <p class="price">R$ 9.449,10</p>
+                    <p class="description">Similar ao modelo branco, este iPhone 16 Pro também conta com construção em titânio, tela de 6,1 polegadas e chip A17 Pro. O design discreto em preto oferece uma estética sofisticada, mantendo o foco na performance e recursos avançados de câmera.</p>
+                </div>
+                <div class="product" onclick="toggleDescription(this)">
+                    <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v1683651059407019658/products/100051727.00-iphone-16-plus-128gb-rosa-mxvw3be-a.jpg&height=470&width=470&height=470&width=470&quality=0.8" alt="Produto 5">
+                    <h2>Apple iPhone 16 Plus 128GB Rosa</h2>
+                    <p class="price">R$ 8.549,10</p>
+                    <p class="description">Com uma tela maior de 6,7 polegadas, o iPhone 16 Plus combina beleza e funcionalidade. Equipado com o chip A17 Bionic, ele é ideal para quem busca um display amplo para consumo de mídia e jogos, além de um sistema de câmeras avançado.</p>
+                </div>
+                <div class="product" onclick="toggleDescription(this)">
+                    <img src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v5717153293664882007/products/100051618.00-airpods-4-cancelamento-ativo-ruido-mxp93bz-a.jpg&height=470&width=470&height=470&width=470&quality=0.8" alt="Produto 6">
+                    <h2>AirPods 4 com Cancelamento Ativo de Ruído</h2>
+                    <p class="price">R$ 1.799,10</p>
+                    <p class="description">Os AirPods 4 oferecem qualidade de som excepcional com cancelamento ativo de ruído, proporcionando uma experiência de audição imersiva. Com conectividade fácil e longa duração da bateria, são perfeitos para uso diário e viagens.</p>
+                </div>
+            </div>
+        
+        <script src="script.js"></script>
     </main>
-
-    <footer>
-        <p>&copy; 2024 - Todos os direitos reservados</p>
-    </footer>
-    </main>
-    
     <footer>
         <p>&copy; 2024 Loja de Eletrônicos NicPlace. Todos os direitos reservados.</p>
     </footer>
